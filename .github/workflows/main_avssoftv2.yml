@@ -23,8 +23,9 @@ jobs:
 
       - name: npm install, build, and test
         run: |
-          npm i  --force
-       
+          npm install
+          npm run build --if-present
+          npm run test --if-present
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
@@ -51,5 +52,5 @@ jobs:
         with:
           app-name: 'AvssoftV2'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_807EA0D63CB2471FB19CB3189D36A032 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_06E5FB92D3164802A433F52F1713AA99 }}
           package: .
