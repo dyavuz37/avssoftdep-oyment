@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/f7a0eadb-3e7e-4885-a91f-e7828103c678/AppServices/subscriptions/f7a0eadb-3e7e-4885-a91f-e7828103c678/resourceGroups/AVSSupply/providers/Microsoft.Web/sites/AvssoftV2",
+    "appService.deploySubpath": "."
+}
